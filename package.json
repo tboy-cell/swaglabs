@@ -10,6 +10,7 @@
     "@badeball/cypress-cucumber-preprocessor": "latest",
     "@cypress/webpack-preprocessor": "latest",
     "cypress": "^15.11.0",
+    "cypress-xpath": "^2.0.1",
     "eslint": "latest",
     "eslint-plugin-cypress": "latest",
     "multiple-cucumber-html-reporter": "latest",
