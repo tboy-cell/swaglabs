@@ -1,11 +1,13 @@
 
 Feature: login
 
-    Scenario: valid details
-        Given login with valid test
-        When it should login successfully with valid test
+    Scenario: valid login
+        Given that i navigate to the url
+        When i enter a valid login credential
+        Then i should be redirected to dashbaord
        
-     Scenario: invalid details
-     Given login with valid test
-        When it should not be able to login successfully with invalid test
+     Scenario: invalid login
+     Given that i navigate to the url
+     
+        When i enter an invalid credetials, i should not be able to login
        

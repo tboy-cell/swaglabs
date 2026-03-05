@@ -6,8 +6,10 @@ username = "standard_user"
 password = "secret_sauce"
 invalidusername = "standard_user5"
 invalidpassword = "secret_sauceh"
+product = ".title"
 
-logintest(){
+
+validLogin(){
 
 cy.get(this.usernamefield).type(this.username)
 cy.get(this.passwordfield).type(this.password)
@@ -16,7 +18,13 @@ cy.get(this.loginbtn).click()
 }
 
 
-logintestcase(){
+productDashboard(){
+
+cy.get(this.product).should("be.visible")
+
+}
+
+invalidLogin(){
 
 cy.get(this.usernamefield).type(this.invalidusername)
 cy.get(this.passwordfield).type(this.invalidpassword)

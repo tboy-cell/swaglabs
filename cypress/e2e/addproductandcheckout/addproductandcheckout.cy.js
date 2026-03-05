@@ -5,14 +5,14 @@ import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 const checkout = new addproductandcheckout
 
 
-When("add product to cart and checkout", () => {
+Then("add product to cart and checkout", () => {
     checkout.addproductandcheckouttest();
 });
 
-When("add product to cart and checkout with empty first name", () => {
+Then("add product to cart and checkout with empty first name", () => {
     checkout.addproductandcheckouttestcase();
 });
 
-When("add product to cart and checkout with empty last name", () => {
+Then("add product to cart and checkout with empty last name", () => {
     checkout.addproductandcheckouttestcase2();
 });

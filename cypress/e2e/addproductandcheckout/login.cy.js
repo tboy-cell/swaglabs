@@ -3,16 +3,21 @@ import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
 
 const loginuser = new login
 
-Given("login with valid test", () => {
+Given("that i navigate to the url", () => {
     cy.visit('/');
 });
 
-When("it should login successfully with valid test", () => {
-    loginuser.logintest();
+When("i enter a valid login credential", () => {
+    loginuser.validLogin();
+
 });
 
-When("it should not be able to login successfully with invalid test", () => {
-    loginuser.logintestcase();
+
+ Then("i should be redirected to dashbaord", () => {
+    loginuser.productDash();
 });
 
- 
+When("i enter an invalid credetials, i should not be able to login", () => {
+    loginuser.invalidLogin();
+
+    });
